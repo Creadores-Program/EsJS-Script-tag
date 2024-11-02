@@ -12,6 +12,20 @@ window.addEventListener("load", function(){
       }catch(error){
         console.error(error);
       }
+      if(etiquetas[i].hasAttribute("src")){
+        try{
+          fetch(etiquetas[i].getAttribute("src")).then(res => res.text()).then(data => {
+            let codigoCo2m = esJscore.compile(data);
+            let element2o = document.createElement("script");
+            element2o.innerHTML = codigoCo2m;
+            document.body.appendChild(elemento);
+          }).catch(function(error){
+            console.error(error);
+          });
+        }catch(error){
+          console.error(error);
+        }
+      }
     }
   }
   let etiquetasH = document.getElementsByTagName("div");
