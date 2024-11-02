@@ -6,25 +6,30 @@ Ejecuta EsJS y EsHtml fácilmente con una etiqueta Html!
 ## Instalación:
 Simplemente añada está etiqueta a su Html:
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/Creadores-Program/EsJS-Script-tag@1.0.0/src/org/CreadoresProgram/EsJsHtml/EsjsScriptTag.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Creadores-Program/EsJS-Script-tag@1.0.1/src/org/CreadoresProgram/EsJsHtml/EsjsScriptTag.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 ## Uso (EsJS):
-Simplemente en su Html añada una o varias etiquetas script con atributo type igual a "text/esjs"
+Simplemente en su Html añada una o varias etiquetas script con atributo type igual a "codigo/esjs"
 ejemplo:
 ```html
 <!--sin src-->
-<script type="text/esjs">
-consola.escribir("hola mundo!")
+<script type="codigo/esjs">
+  consola.escribir("hola mundo!")
 </script>
 
 <!--con src-->
-<script type="text/esjs" src="https://example.com/main.esjs"></script>
+<script type="codigo/esjs" src="https://example.com/main.esjs"></script>
+
+<!--tipo modulo-->
+<script type="codigo/esjs" mode="modulo">
+  //tu codigo
+</script>
 ```
 ## Uso (EsHtml):
-Simplemente en su Html añada una o varias etiquetas div con atributo type igual a "text/eshtml"
+Simplemente en su Html añada una o varias etiquetas div con atributo type igual a "codigo/eshtml"
 ejemplo:
 ```html
-<div type="text/eshtml">
+<div type="codigo/eshtml">
     <principal>
       <t1>EsHTML: HTML en Español</t1>
 
