@@ -30,9 +30,9 @@ window.addEventListener("load", function(){
   }
   let etiquetasH = document.getElementsByTagName("div");
   for(var u = 0; u < etiquetasH.length; u++){
-    if(etiquetasH[i].hasAttribute("type") && etiquetasH[i].getAttribute("type") == "text/eshtml"){
+    if(etiquetasH[u].hasAttribute("type") && etiquetasH[u].getAttribute("type") == "text/eshtml"){
       try{
-        etiquetasH[i].innerHTML = esJseshtml.compile(etiquetasH[i].innerHTML);
+        etiquetasH[u].innerHTML = esJseshtml.compile(etiquetasH[u].innerHTML);
       }catch(error){
         console.error(error);
       }
