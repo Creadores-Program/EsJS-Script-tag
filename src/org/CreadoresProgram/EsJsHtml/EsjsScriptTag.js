@@ -22,9 +22,9 @@ window.addEventListener("load", function(){
             let element2o = document.createElement("script");
             element2o.innerHTML = codigoCo2m;
             if(estiquetas[i].hasAttribute("mode") && etiquetas[i].getAttribute("mode") == "modulo"){
-              elemento.setAttribute("type", "module");
+              element2o.setAttribute("type", "module");
             }
-            document.body.appendChild(elemento);
+            document.body.appendChild(element2o);
           }).catch(function(error){
             console.error(error);
           });
