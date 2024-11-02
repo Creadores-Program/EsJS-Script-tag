@@ -6,7 +6,7 @@ Ejecuta EsJS y EsHtml fácilmente con una etiqueta Html!
 ## Instalación:
 Simplemente añada está etiqueta a su Html:
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/Creadores-Program/EsJS-Script-tag@1.0.1/src/org/CreadoresProgram/EsJsHtml/EsjsScriptTag.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/Creadores-Program/EsJS-Script-tag@1.0.2/src/org/CreadoresProgram/EsJsHtml/EsjsScriptTag.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 ## Uso (EsJS):
 Simplemente en su Html añada una o varias etiquetas script con atributo type igual a "codigo/esjs"
